@@ -1,0 +1,1 @@
+[{"model": "base.room", "pk": 1, "fields": {"name": "Django", "description": "some description", "created": "2022-11-20T10:23:08.421Z", "updated": "2022-11-20T10:26:13.966Z", "participants": []}}]
