@@ -1,0 +1,8 @@
+.room-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls-right a:first-child {
+    padding-right: 10px;
+}

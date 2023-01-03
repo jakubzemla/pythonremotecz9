@@ -2,8 +2,19 @@
 
 {%  block content %}
     <form method="post">
+        <h3>{{ title }}</h3>
         {% csrf_token %}
-        <table>{{ form }}</table>
+        <div class="box">
+            <label for="{{ form.name.id_for_label }}">Room name:</label>
+            {{ form.name }}
+            {{ form.name.errors }}
+        </div>
+        <div class="box">
+            <label for="{{ form.description.id_for_label }}">Room description:</label>
+            {{ form.description }}
+            {{ form.description.errors }}
+        </div>
         <button type="submit">Submit</button>
+        {{ form.non_field_errors }}
     </form>
 {%  endblock %}

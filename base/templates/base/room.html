@@ -5,6 +5,12 @@
     <div class="box">
         {{ room.description }}
     </div>
+    <div class="box room__message">
+        <form method="post">
+            {% csrf_token %}
+            <input id="new_message" name="body" placeholder="Write your message here ...">
+        </form>
+    </div>
     <div class="box">
         {% for message in messages %}
             <div class="message">{{ message.body }}</div>
